@@ -1,0 +1,357 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+    font-family: 'Poppins', sans-serif;
+}
+
+.rootContainer {
+    background: linear-gradient(to left, #fff 50%, #FFF8F1 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.rootContainer .forMobileView {
+    display: none;
+}
+
+
+.rootContainer .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;  
+    padding: 0; margin: 0;
+}
+
+
+
+.rootContainer .header .frameLogo {
+    display: none;
+}
+
+.rootContainer .header .logo img {
+    height: 60%;
+}
+
+
+.rootContainer .header .signUp {
+    text-align: end;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rootContainer .header .signUp .signUpBtn {
+    background: #F05830;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.rootContainer .mainContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* .rootContainer .mainContent .headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.rootContainer .mainContent .rightLeft {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 191px);
+    margin-top: 20px;
+    gap: 45px;
+}
+
+.rootContainer .mainContent .rightLeft .loginContent h3, .rootContainer .forMobileView {
+    align-self: center;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    opacity: .8;
+    text-align: center;
+}
+
+.rootContainer .mainContent .rightLeft .leftImg {
+    flex: 1;
+    align-self: center;
+}
+
+.rootContainer .mainContent .rightLeft img {
+    width: 85%;
+    padding: 0;  margin-left: 25px;
+    /* height: 50%; */
+}
+
+.rootContainer .mainContent .rightLeft .loginContent {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    /* margin-bottom: 20px; */
+}
+
+.rootContainer .mainContent .info {
+    margin: 50px 0 40px 0;
+}
+
+.rootContainer .mainContent .info span {
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 600; */
+    font-size: 14px;
+    opacity: .9;    
+}
+
+.rootContainer .mainContent .info .forMobileView {
+    display: none;
+}
+
+
+.rootContainer .mainContent .rightLeft .loginContent .formgroup {
+    margin-bottom: 20px;
+}
+
+.rootContainer .mainContent .rightLeft .loginContent .formgroup label {
+    font-size: 14px;
+    display: block;
+    margin: 10px 10px 10px 0;
+    
+}
+.rootContainer .mainContent .rightLeft .loginContent .formgroup input {
+    outline: none;
+    border: none;
+    padding: 15px 20px 15px 15px;
+    width: calc(50vw - 120px);
+    background-color: #F5F4FF;
+    /* background-color: orange; */
+    border-radius: 5px;
+}
+
+.rootContainer .mainContent .rightLeft .loginContent .formgroup input::placeholder {
+    opacity: .6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rootContainer .mainContent .rightLeft .loginContent .formgroup .passInput {
+    position: relative;
+}
+
+.rootContainer .mainContent .rightLeft .loginContent .formgroup i {
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    transform: translate(-50%, -50%);
+    opacity: .6;
+    cursor: pointer;
+}
+
+.rootContainer .mainContent .rightLeft .loginContent .signIn {
+    background: #003443;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    padding: 12px 10px;
+    border: none;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.rootContainer .mainContent .rightLeft .loginContent .forgot {
+    font-size: 12px;
+    /* margin: 10px; */
+    opacity: .7;
+    text-align: end;
+}
+
+.rootContainer .contact {
+    display: none;
+}
+
+.rootContainer .footer {
+    display: none;
+}
+
+
+/* Mobile Responsive */
+@media only screen and (max-width: 768px) {
+    .rootContainer {
+        background: #FFF8F1;
+        padding: 0px;
+    }
+    
+    .rootContainer .header {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .rootContainer .forMobileView {
+        display: block;
+    }    
+
+    .rootContainer .header .frameLogo {
+        display: block;
+    }
+
+    .rootContainer .header .logo {
+        text-align: center;
+    }
+
+    .rootContainer .header .logo img {
+        height: 40%;
+    }
+
+    .rootContainer .header .signUp .signUpBtn {
+        padding: 8px 15px;
+    }
+
+    .rootContainer .mainContent .rightLeft .loginContent h3 {
+        display: none;
+    }
+
+    .rootContainer .mainContent .rightLeft {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        gap: 0px;
+        height: fit-content;
+        overflow: hidden;
+    }
+
+    .rootContainer .mainContent .rightLeft .leftImg {
+        order: 2;
+    }
+
+    .rootContainer .mainContent .rightLeft .loginContent {
+        background: #fff;
+        border-radius: 25px;
+    }
+
+    .rootContainer .mainContent .info {
+        margin: 15px 0 0 0;
+        text-align: center;
+    }
+
+    .rootContainer .mainContent .info span {
+        display: none;
+    }
+
+    .rootContainer .mainContent .info .forMobileView {
+        display: block;
+        font-size: 12px;
+    }
+
+    .rootContainer .mainContent .rightLeft .loginContent .info, .rootContainer .mainContent .rightLeft .loginContent .form {
+        margin: 20px 40px;
+    }
+
+    .rootContainer .mainContent .rightLeft .loginContent .form {
+        margin-top: 50px;
+    }
+
+    .rootContainer .mainContent .rightLeft .loginContent .formgroup input {
+        width: 88%;
+    }
+
+    .rootContainer .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(./assets/Rectangle\ 54.png);
+        background-size: cover;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .rootContainer .contact h1 {
+        text-align: center;
+        width: 80%;
+        color: #fff;
+        font-weight: 900;
+    }
+
+    .rootContainer .contact span {
+        color: #fff;
+        opacity: .6;
+    }
+
+    .rootContainer .contact input {
+        margin: 30px 0 30px 0;
+        border: 2px solid rgba(250,250,250,.6);
+        border-radius: 5px;
+        padding: 20px;
+        width: calc(100vw - 150px);
+        background: transparent;
+    }
+
+    .rootContainer .contact input::placeholder {
+        color: #fff;
+        opacity: .6;
+        font-size: 14px;
+    }
+
+    .rootContainer .mainContent .contact .submitBtn {
+        background: #F05830;
+        border: none;
+        padding: 20px 60px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .rootContainer .footer {
+        display: block;
+        background: #fff;
+        width: 100%;
+        padding: 30px 0 30px 0;
+    }
+
+    .rootContainer .footer .aboutContent {
+        display: flex;
+        justify-content: center;
+        gap: 8rem;
+        margin-bottom: 80px;
+    }
+
+    .rootContainer .footer .bold {
+        font-weight: 700;
+    }
+    
+    .rootContainer .footer .allRights .logo {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .rootContainer .footer .allRights span {
+        display: block;
+        margin: 10px 0 10px 0;
+        font-size: 14px;
+    }
+
+    .rootContainer .footer .dull {
+        opacity: .6;
+    }
+
+    .rootContainer .footer .allRights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+}
